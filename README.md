@@ -297,11 +297,15 @@ data = res.json()
 ## 🔹 6. Core Python Concepts
 
 ### List vs Tuple
+| Feature      | List                        | Tuple      |
+| ------------ | --------------------------- | ---------- |
+| Mutability   | Mutable                     | Immutable  |
+| Syntax       | `[]`                        | `()`       |
+| Performance  | Slower                      | Faster     |
+| Memory Usage | More                        | Less       |
+| Methods      | Many (append, remove, etc.) | Limited    |
+| Use Case     | Dynamic data                | Fixed data |
 
-| Feature | List | Tuple |
-| ------- | ---- | ----- |
-| Mutable | Yes  | No    |
-| Syntax  | []   | ()    |
 
 ---
 
@@ -314,6 +318,13 @@ a = [[1,2]]
 b = copy.copy(a)
 c = copy.deepcopy(a)
 ```
+| Feature        | Shallow Copy       | Deep Copy                 |
+| -------------- | ------------------ | ------------------------- |
+| Copy Level     | Only outer object  | Entire object recursively |
+| Nested Objects | Shared reference   | Fully copied              |
+| Memory Usage   | Less               | More                      |
+| Performance    | Faster             | Slower                    |
+| Use Case       | Simple / flat data | Complex / nested data     |
 
 ---
 
