@@ -324,6 +324,13 @@ c = copy.deepcopy(a)
 ---
 
 ### Generator vs List
+| Feature      | List                     | Generator                     |
+| ------------ | ------------------------ | ----------------------------- |
+| Memory Usage | High (stores all values) | Low (one value at a time)     |
+| Execution    | Immediate                | Lazy (on demand)              |
+| Speed        | Faster for small data    | Better for large data         |
+| Syntax       | `[]`                     | `()`                          |
+| Reusability  | Can reuse multiple times | Exhausted after one iteration |
 
 ```python
 # List
@@ -365,21 +372,3 @@ print(a + b)
 ```
 
 ---
-
-## ⭐ Contribute
-
-Feel free to fork this repo and add more interview questions!
-
----
-
-## 📌 Author
-
-Your Name
-
----
-
-If you want, I can also:
-
-* Add **badges (GitHub stars, forks, etc.)**
-* Add **project structure**
-* Create **advanced interview questions (DSA + system design)**
