@@ -344,7 +344,9 @@ g = (i for i in range(5))
 
 ### Memory Management
 
-* Uses reference counting and garbage collection
+* Python uses its private heap space to manage the memory. Basically, all the objects and data structures are stored in the private heap space. Even the programmer can not access this private space as the interpreter takes care of this space. Python also has an inbuilt garbage collector, which recycles all the unused memory and frees the memory and makes it available to the heap space.
+
+
 
 ---
 
